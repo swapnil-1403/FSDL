@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Market Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>📊 Stock Market Dashboard</h1>
+    <p id="lastUpdated"></p>
+</header>
+
+<!-- Stock Summary Section -->
+<div class="summary">
+
+    <div class="summary-card">
+        <h2>AAPL</h2>
+        <p class="price">$195.20</p>
+        <p class="positive">+2.35% ▲</p>
+        <p>Market Cap: $2.9T</p>
+        <p>P/E Ratio: 28.4</p>
+    </div>
+
+    <div class="summary-card">
+        <h2>TSLA</h2>
+        <p class="price">$245.75</p>
+        <p class="negative">-1.12% ▼</p>
+        <p>Market Cap: $780B</p>
+        <p>P/E Ratio: 65.2</p>
+    </div>
+
+    <div class="summary-card">
+        <h2>AMZN</h2>
+        <p class="price">$175.90</p>
+        <p class="positive">+0.89% ▲</p>
+        <p>Market Cap: $1.8T</p>
+        <p>P/E Ratio: 32.7</p>
+    </div>
+
+</div>
+
+<!-- Charts Section -->
+<div class="dashboard">
+
+    <div class="card">
+        <h3>Apple - Weekly Price</h3>
+        <canvas id="appleChart"></canvas>
+    </div>
+
+    <div class="card">
+        <h3>Tesla - Trading Volume</h3>
+        <canvas id="teslaChart"></canvas>
+    </div>
+
+    <div class="card">
+        <h3>Portfolio Allocation</h3>
+        <canvas id="portfolioChart"></canvas>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
